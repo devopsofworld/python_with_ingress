@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-with-ingress-user
+spec:
+  selector:
+    app: python-with-ingress-user
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
